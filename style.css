@@ -1,0 +1,53 @@
+
+table,tr,th,td {
+  border: red 1px solid;
+}
+.btn{
+    width: 67px;
+    border: solid 1px;
+    height: 22px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background: blue;
+    font-style: italic;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+   background: #8bc34a;
+   width: 70px;
+   height: 25px;
+} 
+input.txtcaja{
+ border-radius: 2px;
+ border: solid;
+ font-size: 10px;
+ background: aquamarine;
+ transition: all 0.3s ease-in-out;
+}
+input.txtcaja:hover{
+   background: grey;
+   color: seashell;
+}
+p {
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 300%;
+background: blueviolet;
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+background: blue;
+}
+}
+
