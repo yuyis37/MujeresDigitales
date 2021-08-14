@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: bisque;
+      }
+      button {
+        background: #aefbfb;
+        color: #080808;
+        height: 30px;
+        font-weight: 100;
+        border: groove;
+        border-style: ridge;
+        padding: 15px;
+        margin: 3px;
+      }
+      input {
+        font-size: initial;
+        background: #d9ffff;
+        padding: inherit;
+        border-radius: 2px;
+        border: double;
+      }
+      label {
+        font-stretch: normal;
+        font-family: serif;
+        font-size: inherit;
+        font-size: x-large;
+      }
+      div {
+        font-size: x-large;
+      }
+    </style>
+
+    <script>
+      var valor1 = 0;
+      var valor2 = 0;
+
+      var multiplica = function () {
+        multiplica = valor1 * valor2;
+        alert("Tu respuesta es: " + multiplica);
+      };
+      var suma = function () {
+        suma = valor1 + valor2;
+        alert("Tu respuesta es: " + suma);
+      };
+      var resta = function () {
+        resta = valor1 - valor2;
+        alert("Tu respuesta es: " + resta);
+      };
+      var dividir = function () {
+        dividir = valor1 / valor2;
+        alert("Tu respuesta es: " + dividir);
+      };
+      var obtener = function () {
+        console.log("Obteniendo datos");
+        var a = document.getElementById("prueba1").value;
+        var b = document.getElementById("prueba2").value;
+        valor1 = parseInt(a);
+        valor2 = parseInt(b);
+      };
+    </script>
+
+    <label>Número 1</label>
+    <input type="text" id="prueba1" />
+    <label>Número 2</label>
+    <input type="text" id="prueba2" />
+
+    <div onclick="multiplica()">
+      <button type="button">x</button>
+    </div>
+    <div onclick="suma()">
+      <button type="button">+</button>
+    </div>
+    <div onclick="resta()">
+      <button type="button">-</button>
+    </div>
+    <div onclick="dividir()">
+      <button type="button">/</button>
+    </div>
+
+    <div onclick="obtener()">Obtener Datos</div>
+  </body>
+</html>
