@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+    <!-- //Local Storage es una caja fuerte donde se debe conocer la llave -->
+<div>
+<input type="text" id="micorreo" placeholder="Ingresa tu correo">
+<div onclick="AlmacenarEmail()"> Guardar </div>
+<div onclick="traercorreo()"> Traer Correo </div>
+<div onclick="borrartodo()"> Borrar Todo </div>
+<div onclick="borraremail()"> Borrar Email </div>
+
+
+
+</div>
+
+<script>
+var datos=['john','juan','pedro']
+
+var datosconvertidos = JSON.stringify(datos)
+
+var AlmacenarEmail = function(){
+
+    var correo = document.getElementById('micorreo').value
+    localStorage.setItem("email",correo)
+    localStorage.setItem("password","aslkdj")
+    localStorage.setItem("datos",datosconvertidos)
+}
+
+var traercorreo = function(){
+    var correo = localStorage.getItem('email')
+    document.getElementById('micorreo').value = correo   
+    datos = localStorage.getItem("datos")
+}
+
+var borrartodo = function(){
+    localStorage.clear()
+}
+var borraremail = function(){
+    localStorage.removeItem('email')
+}
+
+</script>
+</body>
+</html>
