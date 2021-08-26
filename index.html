@@ -1,48 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    
-     <a class="navbar-brand" href="#">Mi aplicación</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls=""></button>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item activo">
-                <a class="nav-link" href="#">Home <spam class="sr-only"></spam></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hola</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Lista desplegable
-                </a>
-                
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         
-        <a class="dropdown-item" href="index.html">Inicio</a>
-        <a class="dropdown-item" href="">Registro</a>
-        <a class="dropdown-item" href="login.html">Login</a>
-        <a class="dropdown-item" href="">Activado</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #ffedb5;
+    }
+    .container-fluid {
+      background: #8be0ea;
+    }
+    .container-xxl.col-12.col-sm-5 {
+      justify-content: center;
+      font-size: medium;
+    }
+    .container-xxl.col-12.col-sm-3 {
+      justify-content: start;
+    }
+    .aside {
+      float: right;
+      justify-content: initial;
+    }
+    .w-100 {
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h2>Pinscher</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+  
+    <div class="container-xxl col-12">
+      <div class="row">
+        <div class="card col-12 col-sm-3" style="width: 300px; float: left">
+          <img
+            src="https://i.pinimg.com/originals/03/65/4b/03654b782371380151f00068111a03fc.jpg"
+            width="150px"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pinscher</h5>
+            <p class="card-text">
+              Los pinscher miniatura están llenos de vida, son dinámicos, curiosos
+              e intrépidos. Son perros de temperamento fuerte y aguerrido, a pesar
+              de su pequeño tamaño.
+            </p>
+            <a href="#" class="btn btn-primary">Go </a>
+          </div>
+        </div>
+      <div class="col-12 col-sm-6" style="float: none">
+        <p>
+          <span>
+            El nombre del Pinscher deriva del alemán que significa “mordedor”,
+            pero a su vez a la palabra en inglés “pinch” por el corte que se le
+            hacía en sus orejas para evitar que otros perros los muerdan.
+          </span>
+        </p>
+        <p>
+          <span>
+            El Pinscher está catalogado dentro del grupo de las razas molosas de
+            montaña, donde también están los Doberman, por ejemplo. Hay diversos
+            tipos de Pinscher: alemán, miniatura y austríaco.
+          </span>
+        </p>
+        <p>
+          <span>
+            Es un perro pequeño que puede pesar hasta 16 lb. Tiene una buena
+            conducta, es dócil, cariñoso, juguetón y para nada cobarde. Además,
+            se lo conoce por sus capacidades de guardián de los hogares.
+          </span>
+        </p>
+        <p>
+          <span>
+            El Pinscher es a la vez paciente y dócil con los niños, por lo que
+            su convivencia será maravillosa. Por su tamaño, muchas personas que
+            viven en pisos lo eligen.
+          </span>
+        </p>
+        <p>
+          <span>
+            Necesita de realizar mucho ejercicio cada día y que se le cepille el
+            pelo asiduamente, aunque presente pelaje corto y liso, pero también
+            tupido y apretado al cuerpo, no posee regiones sin pelo. Los colores
+            pueden ser rojo ciervo, marrón oscuro o claro y negro.
+          </span>
+        </p>
+      </div>
+      
+      <div class="card col-12 col-sm-3" style="width: 300px; float: right">
+        <img
+          src="https://p1.pxfuel.com/preview/557/781/179/dog-pet-miniature-pinscher-the-pinscher-mongrel-royalty-free-thumbnail.jpg"
+          width="150px"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Pinscher</h5>
+          <p class="card-text">
+            Tiene una esperanza de vida de unos 13-14 años, su altura oscila
+            entre 25-30 cm. Prefiere los climas cálidos, de hecho, no debe
+            vivir permanentemente en el exterior.
+          </p>
+          <p>
+            Como tantos otros perros de pequeño tamaño, el pinscher miniatura no duda 
+            en plantar cara a perros de grandes dimensiones tales como el Dóberman, 
+            haciendo gala de un coraje y energía desproporcionados con su tamaño.
+          </p>
+          <a href="#" class="btn btn-primary">Go </a>
+        </div>
+      </div>
     </div>
-   </nav>
-    
 
-    
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
