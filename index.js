@@ -104,5 +104,72 @@ console.log(datos)
 //.splice se utiliza para eliminar elementos a partir de una posicion
 //datos.splice(0,1)
 
-console.log(datos.splice(0,1))
-console.log(datos.indexOf("c"))
+// console.log(datos.splice(0,1))
+// console.log(datos.indexOf("c"))
+
+
+var a=1
+var b=1
+var c=2
+var d=3
+
+//if ternario
+// a==b ? console.log('entro'):console.log('no entro')
+
+var edad = "5";
+var vacuna = "pfizer"
+var texto = ""
+
+//Condicional con if
+
+// if(edad >=0 && edad <=10){
+//  texto = texto + "vacuna1"
+// }
+// if (edad >=0 && edad <=4){
+//     texto = texto + "vacuna2"
+// }
+// console.log(texto, "edad:" + edad + " años")
+
+
+//condicional similar al IF
+// switch (true) {
+//     case (edad <= 4) :
+//         vacuna = "vacuna 1"
+//         console.log('selecionaste 0 ')
+//         break;
+//     case (edad >= 5 && edad <= 10):
+//         vacuna = "vacuna 2"
+//             console.log('selecionaste 1')
+//             break;    
+
+//     default:
+//         console.log('no conincidio')
+//         break;
+// }
+
+var datos = [
+    {valor:100,cantidad:1,total:0},
+    {valor:200,cantidad:2,total:0},
+    {valor:300,cantidad:3,total:0},
+    {valor:400,cantidad:4,total:0},
+    {valor:500,cantidad:5,total:0}
+    
+];
+
+ //forof 
+// for (const i of datos) {
+//     i.total = i.valor *i.cantidad
+//     console.log(i)
+    
+// }
+
+
+// for (var i = 0;  i < datos.length ; i++) {
+   
+// datos[i].total = datos[i].cantidad + datos[i].valor
+    
+// if(i==(datos.length -1)) {
+ 
+//         console.log(datos)
+//     }
+// }
